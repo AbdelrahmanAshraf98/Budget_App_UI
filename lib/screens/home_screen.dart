@@ -70,7 +70,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 final double maxWidth = constraints.maxWidth;
                 final double percent = (category.maxAmount - spent)/category.maxAmount;
                 double barWidth = percent * maxWidth;
-                print(barWidth);
                 if(barWidth < 0){barWidth = 0;}
                 return Stack(
                   children: [
